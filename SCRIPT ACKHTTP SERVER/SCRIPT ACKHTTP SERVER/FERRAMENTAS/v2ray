@@ -1,0 +1,16 @@
+#!/bin/bash
+### BY GOD OF SKY
+clear
+rm -f ./v2ray*
+echo -e "\033[1;33mBAIXANDO, INSTALADOR \033[1;32m( V2RAY )"
+sleep 3s
+rm -f ./v2raymanager*
+apt-get update -y  > /dev/null 2>&1 && apt-get upgrade -y  > /dev/null 2>&1 && apt-get install iptables -y > /dev/null 2>&1
+rm -rf /etc/SSHPlus*
+mkdir /etc/SSHPlus
+mkdir /etc/SSHPlus/v2ray/
+touch /etc/SSHPlus/RegV2ray
+wget https://raw.githubusercontent.com/vinissh/ACKHTTP-SERVER-MANAGER/main/SCRIPT%20ACKHTTP%20SERVER/SCRIPT%20ACKHTTP%20SERVER/MENU%2C%20CONEX%C3%83O%2C%20ETC/v2raymanager > /dev/null 2>&1
+chmod +x ./v2raymanager
+sleep 3s
+./v2raymanager
